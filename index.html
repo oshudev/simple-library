@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./script.js" defer></script>
+        <title>TOP | Simple Library</title>
+    </head>
+    <body>
+        <aside class="sidebar">
+            <form class="form" id="form">
+                <div class="form__group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form__control" id="title" />
+                </div>
+                <div class="form__group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" />
+                </div>
+                <div class="form__group">
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" inputmode="numeric" />
+                </div>
+                <div class="form__group">
+                    <label for="is-read">Have you read this book?</label>
+                    <input type="checkbox" id="is-read" />
+                </div>
+                <button type="submit" class="form__button">Add Book</button>
+            </form>
+        </aside>
+        <main class="viewport">
+            <section class="book-collection"></section>
+        </main>
+    </body>
+</html>
